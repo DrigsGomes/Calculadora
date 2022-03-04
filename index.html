@@ -18,31 +18,31 @@
 
             <table>
                 <tr>
-                    <td> <button id="btnEsp" class="btn ac" style="width:106px"> AC</button> </td>
-                    <td> <button id="btnEsp" class="btn neg"> <i class="fa fa-backspace"></i> </button> </td>
-                    <td> <button id="btnEsp" class="btn especial"> <i class="fa fa-divide"></i> </button> </td>
+                    <td> <button id="btnEsp" class="btn ac" style="width:106px" onclick="clean()"> AC </button> </td>
+                    <td> <button id="btnEsp" class="btn neg" onclick="backspace()"> <i class="fa fa-backspace"></i> </button> </td>
+                    <td> <button id="btnEsp" class="btn especial" onclick="insert('/')"> <i class="fa fa-divide"></i> </button> </td>
                 </tr>
 
                 <tr>
-                    <td> <button class="btn"> 7 </button> </td>
-                    <td> <button class="btn"> 8 </i> </button> </td>
-                    <td> <button class="btn"> 9 </i> </button> </td>
-                    <td> <button id="btnEsp" class="btn especial"> x </i> </button> </td>
-
-                </tr>
-
-                <tr>
-                    <td> <button class="btn"> 4 </button> </td>
-                    <td> <button class="btn"> 5 </i> </button> </td>
-                    <td> <button class="btn"> 6 </i> </button> </td>
-                    <td> <button id="btnEsp" class="btn especial"> - </i> </button> </td>
+                    <td> <button class="btn" onclick="insert('7')" > 7 </button> </td>
+                    <td> <button class="btn" onclick="insert('8')" > 8 </i> </button> </td>
+                    <td> <button class="btn" onclick="insert('9')" > 9 </i> </button> </td>
+                    <td> <button id="btnEsp" class="btn especial" onclick="insert('*')"> x </i> </button> </td>
 
                 </tr>
 
                 <tr>
-                    <td> <button class="btn"> 0 </button> </td>
-                    <td> <button class="btn"> . </i> </button> </td>
-                    <td> <button id="btnEsp" class="btn igual" style="width:106px"> = </i> </button> </td>
+                    <td> <button class="btn" onclick="insert('4')" > 4 </button> </td>
+                    <td> <button class="btn" onclick="insert('5')" > 5 </i> </button> </td>
+                    <td> <button class="btn" onclick="insert('6')" > 6 </i> </button> </td>
+                    <td> <button id="btnEsp" onclick="insert('-')" class="btn especial"> - </i> </button> </td>
+
+                </tr>
+
+                <tr>
+                    <td> <button class="btn" onclick="insert('0')" > 0 </button> </td>
+                    <td> <button class="btn" onclick="insert('.')" > . </i> </button> </td>
+                    <td> <button id="btnEsp" class="btn igual" style="width:106px" onclick="confirm()" > = </i> </button> </td>
                    
 
                 </tr>
