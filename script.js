@@ -1,6 +1,7 @@
 const resultado = document.querySelector('.result');
 const confirmar = document.querySelector('.igual');
 
+
 function insert(valor){
     resultado.innerHTML += valor;
 
@@ -19,6 +20,6 @@ function backspace() {
 
 function confirm() {
     if(resultado.textContent != 'Erro') {
-        document.getElementById("resultado").innerHTML = eval(resultado.innerHTML)
+        document.getElementById("resultado").innerHTML = eval(resultado.tof.innerHTML)
     }
 }
