@@ -1,15 +1,15 @@
-const resultado = document.querySelector('.result');
-const confirmar = document.querySelector('.igual');
+const resultado = document.querySelector(' .result ');
+const confirmar = document.querySelector(' .igual ');
 
-
-function insert(valor){
+function insert( valor ){
     resultado.innerHTML += valor;
-
 }
 
-function clean(){
-    resultado.innerHTML= '';
+
+function clean() {
+    resultado.innerHTML = ' ';
 }
+
 
 function backspace() {
     if(resultado.textContent){
@@ -18,8 +18,9 @@ function backspace() {
     } 
 }
 
-function confirm() {
+
+function confirma() {
     if(resultado.textContent != 'Erro') {
-        document.getElementById("resultado").innerHTML = eval(resultado.tof.innerHTML)
+        document.getElementById("resultado").innerHTML = eval(resultado.innerHTML)
     }
 }
